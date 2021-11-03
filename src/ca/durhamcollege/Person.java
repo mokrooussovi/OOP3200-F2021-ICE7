@@ -1,54 +1,13 @@
 package ca.durhamcollege;
 
-/**
- * This is the 'Person' class
- */
+
 public class Person
 {
     // PRIVATE INSTANCE VARIABLES
-
     private String m_name;
     private int m_age;
 
-    // PUBLIC PROPERTIES
-
-    /**
-     * Getter getName()
-     * @return m_name
-     */
-    public String getName()
-    {
-        return m_name;
-    }
-
-    /**
-     * Setter stName()
-     * @param m_name
-     */
-    public void setName(String m_name)
-    {
-        this.m_name = m_name;
-    }
-
-    /**
-     * Getter getAge()
-     * @return m_age
-     */
-    public int getAge()
-    {
-        return m_age;
-    }
-
-    /**
-     * Setter setAge()
-     * @param m_age
-     */
-    public void setAge(int m_age)
-    {
-        this.m_age = m_age;
-    }
-
-
+    // Constructors
     /**
      * Default Constructor
      */
@@ -59,19 +18,19 @@ public class Person
     }
 
     /**
-     * Parameterized Constructor
-     * @param name
-     * @param age
+     * The parametrized Constructor
      */
     public Person(String name, int age)
     {
         this.m_name = name;
         this.m_age = age;
+        /* Set(name, age); */
     }
+
 
     /**
      * Parameterized Constructor with one parameter of name
-     * @param name
+     * @param
      */
     public Person(String name)
     {
@@ -81,7 +40,7 @@ public class Person
 
     /**
      * Parameterized Constructor with one parameter of age
-     * @param age
+     * @param
      */
     public Person(int age)
     {
@@ -89,10 +48,40 @@ public class Person
         this.m_age = age;
     }
 
+    // PUBLIC PROPERTIES
+
+    public String getName()
+    {
+        return m_name;
+    }
+
+    // Getters and Setters
+    public int getAge()
+    {
+        return m_age;
+    }
+
+
+    public void Set(String name, int age)
+    {
+        SetName(name);
+        SetAge(age);
+    }
+
+    private void SetAge(int age)
+    {
+        m_age = age;
+    }
+
+    private void SetName(String name)
+    {
+        m_name = name;
+    }
+
     // METHODS
 
     /**
-     * This method tests the Person class and retnrns a simple message to the console
+     * This method tests the Person class and returns a simple message to the console
      * @return {Void}
      */
     public void saysHello()
