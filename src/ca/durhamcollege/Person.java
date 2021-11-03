@@ -1,5 +1,11 @@
-package ca.durhamcollege;
+/**
+ * @author Ivan Mokrooussov
+ * @studentID 100808605
+ * @version 0.0.1
+ * @date November 3, 2021
+ */
 
+package ca.durhamcollege;
 
 public class Person
 {
@@ -68,12 +74,12 @@ public class Person
         SetAge(age);
     }
 
-    private void SetAge(int age)
+    public void SetAge(int age)
     {
         m_age = age;
     }
 
-    private void SetName(String name)
+    public void SetName(String name)
     {
         m_name = name;
     }
